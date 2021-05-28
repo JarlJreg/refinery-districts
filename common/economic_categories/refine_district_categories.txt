@@ -4,3 +4,10 @@ planet_districts_refinery = {
 		cost
 	}
 }
+
+habitat_districts_refinery = {
+	parent = planet_districts
+	generate_mult_modifiers = {
+		cost
+	}
+}
