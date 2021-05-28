@@ -4,7 +4,7 @@ district_refinery = {
 		base_buildtime = 360
 		is_capped_by_modifier = no
 		resources = {
-			category = planet_districts_refinery
+			category = ring_world_districts_refinery
 			cost = {
 				minerals = 1000
 			}
