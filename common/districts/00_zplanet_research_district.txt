@@ -1,0 +1,319 @@
+@base_job_planet
+district_refinery = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+
+	prerequisites = {
+		"tech_basic_science_lab_1"
+		"tech_global_production_strategy"
+	}
+
+	show_on_uncolonized = {
+		exists = from
+		uses_district_industrial = yes
+	}
+
+	potential = {
+		exists = owner
+		uses_district_industrial = yes
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		OR = {
+			NOT = { has_global_flag = str_enabled_flag }
+			str_research_allow = yes
+			owner = { is_ai = no }
+		}
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_arcology_refinery
+	}
+
+	resources = {
+		category = planet_districts_research
+		cost = {
+			minerals = @city_cost
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+	#bonus jobs from buildings
+		#not gestalts
+		triggered_planet_modifier = {
+			potential = {
+				exists = owner
+				owner = {
+					is_gestalt = no
+				}
+				OR = {
+					has_active_building = building_spec_gases_main_1
+					has_active_building = building_spec_gases_main_2
+					has_active_building = building_spec_gases_main_3
+				}
+			}
+			modifier = {
+				job_refiner_add = @base_job_planet
+			}
+		}
+		triggered_planet_modifier = {
+			potential = {
+				exists = owner
+				owner = {
+					is_gestalt = no
+				}
+
+				OR = {
+					has_active_building = building_spec_gases_aux
+				}
+			}
+			modifier = {
+				job_refiner_add = @base_job_planet
+			}
+		}
+		triggered_planet_modifier = {
+			potential = {
+				exists = owner
+				owner = {
+					is_gestalt = no
+				}
+				OR = {
+					has_active_building = building_spec_crystals_main_1
+					has_active_building = building_spec_crystals_main_2
+					has_active_building = building_spec_crystals_main_3
+				}
+			}
+			modifier = {
+				job_translucer_add = @base_job_planet
+			}
+		}
+		triggered_planet_modifier = {
+			potential = {
+				exists = owner
+				owner = {
+					is_gestalt = no
+					OR = {
+						has_active_building = building_spec_crystals_aux
+					}
+				}
+			}
+			modifier = {
+				job_translucer_add = @base_job_planet
+			}
+		}
+		triggered_planet_modifier = {
+			potential = {
+				exists = owner
+				owner = {
+					is_gestalt = no
+					OR = {
+						has_active_building = building_spec_motes_main_1
+						has_active_building = building_spec_motes_main_2
+						has_active_building = building_spec_motes_main_3
+					}
+				}
+			}
+			modifier = {
+				job_chemist_add = @base_job_planet
+			}
+		}
+		triggered_planet_modifier = {
+			potential = {
+				exists = owner
+				owner = {
+					is_gestalt = no
+					OR = {
+						has_active_building = building_spec_motes_aux
+					}
+				}
+			}
+			modifier = {
+				job_chemist_add = @base_job_planet
+			}
+		}
+
+	#bonus productivity from buildings
+
+	#Description Tooltip
+		triggered_desc = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = no }
+			}
+			text = job_strategic_resources_effect_desc
+		}
+		triggered_desc = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = yes }
+			}
+			text = job_strategic_resources_drone_effect_desc
+		}
+
+	#ai_resource_production
+		#exotic_gases
+			ai_resource_production = {
+				exotic_gases = 1
+				trigger = {
+					owner = {
+						has_active_building = building_spec_gases_main_1
+					}
+				}
+			}
+			ai_resource_production = {
+				exotic_gases = 1
+				trigger = {
+					owner = {
+						has_active_building = building_spec_gases_main_1
+						has_active_building = building_spec_gases_aux
+					}
+				}
+			}
+			ai_resource_production = {
+				exotic_gases = 2
+				trigger = {
+					owner = {
+						has_active_building = building_spec_gases_main_2
+					}
+				}
+			}
+			ai_resource_production = {
+				exotic_gases = 2
+				trigger = {
+					owner = {
+						has_active_building = building_spec_gases_main_2
+						has_active_building = building_spec_gases_aux
+					}
+				}
+			}
+			ai_resource_production = {
+				exotic_gases = 3
+				trigger = {
+					owner = {
+						has_active_building = building_spec_gases_main_3
+					}
+				}
+			}
+			ai_resource_production = {
+				exotic_gases = 3
+				trigger = {
+					owner = {
+						has_active_building = building_spec_gases_main_3
+						has_active_building = building_spec_gases_aux
+					}
+				}
+			}
+		#rare_crystals
+			ai_resource_production = {
+				rare_crystals = 1
+				trigger = {
+					owner = {
+						has_active_building = building_spec_crystals_main_1
+					}
+				}
+			}
+			ai_resource_production = {
+				rare_crystals = 1
+				trigger = {
+					owner = {
+						has_active_building = building_spec_crystals_main_1
+						has_active_building = building_spec_crystals_aux
+					}
+				}
+			}
+			ai_resource_production = {
+				rare_crystals = 2
+				trigger = {
+					owner = {
+						has_active_building = building_spec_crystals_main_2
+					}
+				}
+			}
+			ai_resource_production = {
+				rare_crystals = 2
+				trigger = {
+					owner = {
+						has_active_building = building_spec_crystals_main_2
+						has_active_building = building_spec_crystals_aux
+					}
+				}
+			}
+			ai_resource_production = {
+				rare_crystals = 3
+				trigger = {
+					owner = {
+						has_active_building = building_spec_crystals_main_3
+					}
+				}
+			}
+			ai_resource_production = {
+				rare_crystals = 3
+				trigger = {
+					owner = {
+						has_active_building = building_spec_crystals_main_3
+						has_active_building = building_spec_crystals_aux
+					}
+				}
+			}
+		#volatile_motes
+			ai_resource_production = {
+				volatile_motes = 1
+				trigger = {
+					owner = {
+						has_active_building = building_spec_motes_main_1
+					}
+				}
+			}
+			ai_resource_production = {
+				volatile_motes = 1
+				trigger = {
+					owner = {
+						has_active_building = building_spec_motes_main_1
+						has_active_building = building_spec_motes_aux
+					}
+				}
+			}
+			ai_resource_production = {
+				volatile_motes = 2
+				trigger = {
+					owner = {
+						has_active_building = building_spec_motes_main_2
+					}
+				}
+			}
+			ai_resource_production = {
+				volatile_motes = 2
+				trigger = {
+					owner = {
+						has_active_building = building_spec_motes_main_2
+						has_active_building = building_spec_motes_aux
+					}
+				}
+			}
+			ai_resource_production = {
+				volatile_motes = 3
+				trigger = {
+					owner = {
+						has_active_building = building_spec_motes_main_3
+					}
+				}
+			}
+			ai_resource_production = {
+				volatile_motes = 3
+				trigger = {
+					owner = {
+						has_active_building = building_spec_motes_main_3
+						has_active_building = building_spec_motes_aux
+					}
+				}
+			}
+
+}

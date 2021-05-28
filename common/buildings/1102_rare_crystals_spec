@@ -1,0 +1,260 @@
+building_spec_crystals_main_1 = {
+	base_buildtime = @b1_time
+	category = manufacturing
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+	can_build = no
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
+		NOT = { has_building = building_spec_crystals_main_1 }
+		NOT = { has_building = building_spec_crystals_main_2 }
+		NOT = { has_building = building_spec_crystals_main_3 }
+		NOT = { has_planet_flag = building_spec_crystals_main_queued}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_translucer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_translucer_drone_add = 1
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	prerequisites = {
+		"tech_rare_crystals"
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_translucer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_translucer_drone_effect_desc
+	}
+	on_built = { remove_planet_flag = building_spec_crystals_main_queued }
+	on_queued = { remove_planet_flag = building_spec_crystals_main_queued }
+	on_unqueued = { remove_planet_flag = building_spec_crystals_main_queued }
+	upgrades = { building_spec_crystals_main_2 }
+}
+
+building_spec_crystals_main_2 = {
+	base_buildtime = @b2_time
+
+	category = manufacturing
+
+	can_build = no
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_translucer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_translucer_drone_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_translucer_effect_desc
+	}
+	triggered_desc = {
+	category = manufacturing
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_translucer_drone_effect_desc
+	}
+	upgrades = { building_spec_crystals_main_3 }
+}
+
+building_spec_crystals_main_3 = {
+	base_buildtime = @b3_time
+
+	category = manufacturing
+
+	can_build = no
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_translucer_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_translucer_drone_add = 3
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1500
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	triggered_desc = {
+	category = manufacturing
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_translucer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_translucer_drone_effect_desc
+	}
+}
+
+building_spec_crystals_aux = {
+	base_buildtime = @b1_time
+
+	category = manufacturing
+
+	can_build = no
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
+	  OR = {
+    has_building = building_spec_crystals_main_3
+		has_building = building_spec_crystals_main_2
+		has_building = building_spec_crystals_main_1
+    }
+		NOT = { has_building = building_spec_crystals_aux }
+		NOT = { has_planet_flag = building_spec_crystals_aux_queued}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_translucer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_translucer_drone_add = 1
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	prerequisites = {
+		"tech_rare_crystals"
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_translucer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_translucer_drone_effect_desc
+	}
+
+	on_built = { remove_planet_flag = building_spec_crystals_aux_queued }
+	on_queued = { remove_planet_flag = building_spec_crystals_aux_queued }
+	on_unqueued = { remove_planet_flag = building_spec_crystals_aux_queued }
+}

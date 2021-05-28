@@ -1,0 +1,27 @@
+#base building (planet limit 2)
+building_spec_generic = {
+	base_buildtime = 0
+	category = manufacturing
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+	base_cap_amount = 2
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 100
+		}
+		upkeep = {}
+	}
+	upgrades = {
+		building_spec_gases_main_1
+		building_spec_gases_aux
+		building_spec_crystals_main_1
+		building_spec_crystals_aux
+		building_spec_motes_main_1
+		building_spec_motes_aux
+	}
+}
