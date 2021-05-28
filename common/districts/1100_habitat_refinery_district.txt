@@ -5,7 +5,7 @@ district_refinery = {
 		base_buildtime = 240
 		is_capped_by_modifier = no
 		resources = {
-			category = planet_districts_refinery
+			category = habitat_districts_refinery
 			cost = {
 				minerals = 500
 			}
