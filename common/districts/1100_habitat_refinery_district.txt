@@ -32,6 +32,34 @@ district_refinery = {
 			planet_modifier = {
 				planet_housing_add = 3
 			}
+		#Research
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = no }
+				}
+				modifier = {
+					job_researcher_add = @localvar_base_jobs
+				}
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_hive_empire = yes }
+				}
+				modifier = {
+					job_brain_drone_add = @localvar_base_jobs
+				}
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_machine_empire = yes }
+				}
+				modifier = {
+					job_calculator_add = @localvar_base_jobs
+				}
+			}
 		#Non_gestalts
 			#exotic_gases
 				triggered_planet_modifier = {
