@@ -1,7 +1,6 @@
 @localvar_base_jobs = 1
 habitat_district_refinery = {
 	#Basic_properties
-		#
 		base_buildtime = 240
 		is_capped_by_modifier = no
 		resources = {
@@ -15,7 +14,6 @@ habitat_district_refinery = {
 		}
 	#Conditions
 		potential = {
-			exists = owner
 			uses_district_set = habitat
 		}
 		allow = {
@@ -24,7 +22,6 @@ habitat_district_refinery = {
 			}
 		}
 		show_on_uncolonized = {
-			exists = from
 			uses_district_set = habitat
 		}
 	#Effects
