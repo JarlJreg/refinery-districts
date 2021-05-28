@@ -28,7 +28,7 @@ district_refinery = {
 	#Effects
 		#Base
 			planet_modifier = {
-				planet_housing_add = 2
+				planet_housing_add = 10
 			}
 		#Non_gestalts
 			#exotic_gases
