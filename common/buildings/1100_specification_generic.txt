@@ -1,32 +1,59 @@
 #base building (planet limit 2)
 building_spec_generic = {
-	base_buildtime = 0
-	category = manufacturing
-	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
-		building_basic_income_check = yes
-	}
-	destroy_trigger = {
-		OR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
+	#Basic_properties
+		category = manufacturing
+		base_buildtime = 0
+		base_cap_amount = 2
+		resources = {
+			category = planet_buildings
+			cost = {
+				minerals = 100
+			}
+			upkeep = {}
 		}
-	}
-	base_cap_amount = 2
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 100
+		upgrades = {
+			building_spec_gases_main_1
+			building_spec_gases_aux
+			building_spec_crystals_main_1
+			building_spec_crystals_aux
+			building_spec_motes_main_1
+			building_spec_motes_aux
 		}
-		upkeep = {}
-	}
-	upgrades = {
-		building_spec_gases_main_1
-		building_spec_gases_aux
-		building_spec_crystals_main_1
-		building_spec_crystals_aux
-		building_spec_motes_main_1
-		building_spec_motes_aux
-	}
+	#Conditions
+		potential = {
+			NOT = { has_modifier = resort_colony }
+			NOT = { has_modifier = slave_colony }
+			building_basic_income_check = yes
+		}
+		prerequisites = {
+			"tech_global_production_strategy"
+		}
+		destroy_trigger = {
+			OR = {
+				has_modifier = resort_colony
+				has_modifier = slave_colony
+			}
+		}
+	#Descriptions
+		triggered_desc = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = no }
+			}
+			text = strat_generic_desc
+		}
+		triggered_desc = {
+			trigger = {
+				exists = owner
+				owner = { is_machine_empire = yes }
+			}
+			text = strat_generic_machine_desc
+		}
+		triggered_desc = {
+			trigger = {
+				exists = owner
+				owner = { is_hive_empire = yes }
+			}
+			text = strat_generic_hive_desc
+		}
 }
