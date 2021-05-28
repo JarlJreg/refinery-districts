@@ -6,7 +6,7 @@ district_refinery = {
 		resources = {
 			category = planet_districts_refinery
 			cost = {
-				minerals = @city_cost
+				minerals = 500
 			}
 			upkeep = {
 				energy = 2
