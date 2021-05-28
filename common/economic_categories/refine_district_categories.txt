@@ -1,3 +1,10 @@
+habitat_districts_refinery = {
+	parent = planet_districts
+	generate_mult_modifiers = {
+		cost
+	}
+}
+
 planet_districts_refinery = {
 	parent = planet_districts
 	generate_mult_modifiers = {
@@ -5,7 +12,14 @@ planet_districts_refinery = {
 	}
 }
 
-habitat_districts_refinery = {
+ecu_districts_refinery = {
+	parent = planet_districts
+	generate_mult_modifiers = {
+		cost
+	}
+}
+
+ring_world_districts_refinery = {
 	parent = planet_districts
 	generate_mult_modifiers = {
 		cost
