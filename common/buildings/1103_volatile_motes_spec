@@ -1,5 +1,5 @@
 building_spec_motes_main_1 = {
-	#Basic_properties
+	# Basic_properties
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b1_time
@@ -13,7 +13,7 @@ building_spec_motes_main_1 = {
 			}
 		}
 		upgrades = { building_spec_motes_main_2 }
-	#Conditions
+	# Conditions
 		potential = {
 			NOT = { has_modifier = resort_colony }
 			NOT = { has_modifier = slave_colony }
@@ -32,7 +32,7 @@ building_spec_motes_main_1 = {
 				has_modifier = slave_colony
 			}
 		}
-	#Effects
+	# Effects
 		triggered_planet_modifier = {
 			potential = {
 				exists = owner
@@ -51,7 +51,7 @@ building_spec_motes_main_1 = {
 				job_chemist_drone_add = 1
 			}
 		}
-	#Descriptions
+	# Descriptions
 		triggered_desc = {
 			trigger = {
 				exists = owner
@@ -66,14 +66,14 @@ building_spec_motes_main_1 = {
 			}
 			text = job_chemist_drone_effect_desc
 		}
-	#Flags
+	# Flags
 		on_built = { remove_planet_flag = building_spec_motes_main_queued }
 		on_queued = { remove_planet_flag = building_spec_motes_main_queued }
 		on_unqueued = { remove_planet_flag = building_spec_motes_main_queued }
 }
 
 building_spec_motes_main_2 = {
-	#Basic_properties
+	# Basic_properties
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b2_time
@@ -87,7 +87,7 @@ building_spec_motes_main_2 = {
 			}
 		}
 		upgrades = { building_spec_motes_main_3 }
-	#Conditions
+	# Conditions
 		potential = {
 			NOT = { has_modifier = resort_colony }
 			NOT = { has_modifier = slave_colony }
@@ -105,7 +105,7 @@ building_spec_motes_main_2 = {
 				has_modifier = slave_colony
 			}
 		}
-	#Effects
+	# Effects
 		planet_modifier = {
 			modifier = {
 			planet_chemists_volatile_motes_produces_add=1
@@ -130,7 +130,7 @@ building_spec_motes_main_2 = {
 				job_chemist_drone_add = 2
 			}
 		}
-	#Descriptions
+	# Descriptions
 		triggered_desc = {
 			trigger = {
 				exists = owner
@@ -148,7 +148,7 @@ building_spec_motes_main_2 = {
 }
 
 building_spec_motes_main_3 = {
-	#Basic_properties
+	# Basic_properties
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b3_time
@@ -161,7 +161,7 @@ building_spec_motes_main_3 = {
 				energy = 4
 			}
 		}
-	#Conditions
+	# Conditions
 		potential = {
 			NOT = { has_modifier = resort_colony }
 			NOT = { has_modifier = slave_colony }
@@ -180,7 +180,7 @@ building_spec_motes_main_3 = {
 				has_modifier = slave_colony
 			}
 		}
-	#Effects
+	# Effects
 		triggered_planet_modifier = {
 			potential = {
 				exists = owner
@@ -203,7 +203,7 @@ building_spec_motes_main_3 = {
 				planet_chemists_minerals_upkeep_add=10
 			}
 		}
-	#Descriptions
+	# Descriptions
 		triggered_desc = {
 			trigger = {
 				exists = owner
@@ -221,7 +221,7 @@ building_spec_motes_main_3 = {
 }
 
 building_spec_motes_aux = {
-	#Basic_properties
+	# Basic_properties
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b1_time
@@ -234,7 +234,7 @@ building_spec_motes_aux = {
 				energy = 2
 			}
 		}
-	#Conditions
+	# Conditions
 		potential = {
 			NOT = { has_modifier = resort_colony }
 			NOT = { has_modifier = slave_colony }
@@ -256,7 +256,7 @@ building_spec_motes_aux = {
 				has_modifier = slave_colony
 			}
 		}
-	#Effects
+	# Effects
 		triggered_planet_modifier = {
 			potential = {
 				exists = owner
@@ -275,7 +275,7 @@ building_spec_motes_aux = {
 				job_chemist_drone_add = 1
 			}
 		}
-	#Descriptions
+	# Descriptions
 		triggered_desc = {
 			trigger = {
 				exists = owner
@@ -290,7 +290,7 @@ building_spec_motes_aux = {
 			}
 			text = job_chemist_drone_effect_desc
 		}
-	#Flags
+	# Flags
 		on_built = { remove_planet_flag = building_spec_motes_aux_queued }
 		on_queued = { remove_planet_flag = building_spec_motes_aux_queued }
 		on_unqueued = { remove_planet_flag = building_spec_motes_aux_queued }

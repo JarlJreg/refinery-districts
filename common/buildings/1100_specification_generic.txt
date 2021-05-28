@@ -1,6 +1,6 @@
-#base building (planet limit 2)
+# base building (planet limit 2)
 building_spec_generic = {
-	#Basic_properties
+	# Basic_properties
 		category = manufacturing
 		base_buildtime = 0
 		base_cap_amount = 2
@@ -19,7 +19,7 @@ building_spec_generic = {
 			building_spec_motes_main_1
 			building_spec_motes_aux
 		}
-	#Conditions
+	# Conditions
 		potential = {
 			NOT = { has_modifier = resort_colony }
 			NOT = { has_modifier = slave_colony }
@@ -34,7 +34,7 @@ building_spec_generic = {
 				has_modifier = slave_colony
 			}
 		}
-	#Descriptions
+	# Descriptions
 		triggered_desc = {
 			trigger = {
 				exists = owner

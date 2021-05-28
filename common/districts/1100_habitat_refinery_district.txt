@@ -1,6 +1,6 @@
 @localvar_base_jobs = 1
 habitat_district_refinery = {
-	#Basic_properties
+	# Basic_properties
 		base_buildtime = 240
 		is_capped_by_modifier = no
 		resources = {
@@ -12,7 +12,7 @@ habitat_district_refinery = {
 				energy = 2
 			}
 		}
-	#Conditions
+	# Conditions
 		potential = {
 			uses_district_set = habitat
 		}
@@ -24,12 +24,12 @@ habitat_district_refinery = {
 		show_on_uncolonized = {
 			uses_district_set = habitat
 		}
-	#Effects
-		#Base
+	# Effects
+		# Base
 			planet_modifier = {
 				planet_housing_add = 3
 			}
-		#Research
+		# Research
 			triggered_planet_modifier = {
 				potential = {
 					exists = owner
@@ -57,8 +57,8 @@ habitat_district_refinery = {
 					job_calculator_add = @localvar_base_jobs
 				}
 			}
-		#Non_gestalts
-			#exotic_gases
+		# Non_gestalts
+			# exotic_gases
 				triggered_planet_modifier = {
 					potential = {
 						exists = owner
@@ -89,7 +89,7 @@ habitat_district_refinery = {
 						job_gas_refiner_add = @localvar_base_jobs
 					}
 				}
-			#rare_crystals
+			# rare_crystals
 				triggered_planet_modifier = {
 					potential = {
 						exists = owner
@@ -120,7 +120,7 @@ habitat_district_refinery = {
 						job_translucer_add = @localvar_base_jobs
 					}
 				}
-			#volatile_motes
+			# volatile_motes
 				triggered_planet_modifier = {
 					potential = {
 						exists = owner
@@ -151,8 +151,8 @@ habitat_district_refinery = {
 						job_chemist_add = @localvar_base_jobs
 					}
 				}
-		#Gestalts
-			#exotic_gases
+		# Gestalts
+			# exotic_gases
 				triggered_planet_modifier = {
 					potential = {
 						exists = owner
@@ -183,7 +183,7 @@ habitat_district_refinery = {
 						job_gas_refiner_drone_add = @localvar_base_jobs
 					}
 				}
-			#rare_crystals
+			# rare_crystals
 				triggered_planet_modifier = {
 					potential = {
 						exists = owner
@@ -214,7 +214,7 @@ habitat_district_refinery = {
 						job_translucer_drone_add = @localvar_base_jobs
 					}
 				}
-			#volatile_motes
+			# volatile_motes
 				triggered_planet_modifier = {
 					potential = {
 						exists = owner
@@ -245,8 +245,8 @@ habitat_district_refinery = {
 						job_chemist_drone_add = @localvar_base_jobs
 					}
 				}
-				#Description Tooltip
-					#Non_gestalts
+				# Description Tooltip
+					# Non_gestalts
 						triggered_desc = {
 							trigger = {
 								exists = owner
@@ -292,7 +292,7 @@ habitat_district_refinery = {
 							}
 							text = job_chemist_effect_desc
 						}
-					#Gestalts
+					# Gestalts
 						triggered_desc = {
 							trigger = {
 								exists = owner
