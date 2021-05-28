@@ -1,3 +1,4 @@
+@localvar_base_jobs = 1
 district_refinery = {
 	#Basic_properties
 		#
@@ -29,7 +30,7 @@ district_refinery = {
 	#Effects
 		#Base
 			planet_modifier = {
-				planet_housing_add = 2
+				planet_housing_add = 3
 			}
 		#Non_gestalts
 			#exotic_gases
@@ -46,7 +47,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_gas_refiner_add = 1
+						job_gas_refiner_add = @localvar_base_jobs
 					}
 				}
 				triggered_planet_modifier = {
@@ -60,7 +61,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_gas_refiner_add = 1
+						job_gas_refiner_add = @localvar_base_jobs
 					}
 				}
 			#rare_crystals
@@ -77,7 +78,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_translucer_add = 1
+						job_translucer_add = @localvar_base_jobs
 					}
 				}
 				triggered_planet_modifier = {
@@ -91,7 +92,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_translucer_add = 1
+						job_translucer_add = @localvar_base_jobs
 					}
 				}
 			#volatile_motes
@@ -108,7 +109,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_chemist_add = 1
+						job_chemist_add = @localvar_base_jobs
 					}
 				}
 				triggered_planet_modifier = {
@@ -122,7 +123,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_chemist_add = 1
+						job_chemist_add = @localvar_base_jobs
 					}
 				}
 		#Gestalts
@@ -140,7 +141,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_gas_refiner_drone_add = 1
+						job_gas_refiner_drone_add = @localvar_base_jobs
 					}
 				}
 				triggered_planet_modifier = {
@@ -154,7 +155,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_gas_refiner_drone_add = 1
+						job_gas_refiner_drone_add = @localvar_base_jobs
 					}
 				}
 			#rare_crystals
@@ -171,7 +172,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_translucer_drone_add = 1
+						job_translucer_drone_add = @localvar_base_jobs
 					}
 				}
 				triggered_planet_modifier = {
@@ -185,7 +186,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_translucer_drone_add = 1
+						job_translucer_drone_add = @localvar_base_jobs
 					}
 				}
 			#volatile_motes
@@ -202,7 +203,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_chemist_drone_add = 1
+						job_chemist_drone_add = @localvar_base_jobs
 					}
 				}
 				triggered_planet_modifier = {
@@ -216,7 +217,7 @@ district_refinery = {
 						}
 					}
 					modifier = {
-						job_chemist_drone_add = 1
+						job_chemist_drone_add = @localvar_base_jobs
 					}
 				}
 	#Description Tooltip
