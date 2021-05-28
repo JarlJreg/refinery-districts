@@ -69,11 +69,14 @@ building_spec_crystals_main_1 = {
 
 building_spec_crystals_main_2 = {
 	base_buildtime = @b2_time
-
 	category = manufacturing
-
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
 	can_build = no
-
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
@@ -86,6 +89,8 @@ building_spec_crystals_main_2 = {
 		}
 		modifier = {
 			job_translucer_add = 2
+			planet_translucer_rare_crystals_produces_add = 1
+			planet_translucer
 		}
 	}
 	triggered_planet_modifier = {
@@ -114,13 +119,7 @@ building_spec_crystals_main_2 = {
 		text = job_translucer_effect_desc
 	}
 	triggered_desc = {
-	category = manufacturing
-	destroy_trigger = {
-		OR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-		}
-	}
+		trigger = {
 			exists = owner
 			owner = { is_gestalt = yes }
 		}

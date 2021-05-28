@@ -1,6 +1,5 @@
 building_spec_motes_main_1 = {
 	base_buildtime = @b1_time
-
 	category = manufacturing
 	destroy_trigger = {
 		OR = {
@@ -8,9 +7,7 @@ building_spec_motes_main_1 = {
 			has_modifier = slave_colony
 		}
 	}
-
 	can_build = no
-
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
@@ -65,17 +62,13 @@ building_spec_motes_main_1 = {
 		text = job_chemist_drone_effect_desc
 	}
 	on_built = { remove_planet_flag = building_spec_motes_main_queued }
-
 	on_queued = { remove_planet_flag = building_spec_motes_main_queued }
-
 	on_unqueued = { remove_planet_flag = building_spec_motes_main_queued }
-
 	upgrades = { building_spec_motes_main_2 }
 }
 
 building_spec_motes_main_2 = {
 	base_buildtime = @b2_time
-
 	category = manufacturing
 	destroy_trigger = {
 		OR = {
@@ -83,9 +76,7 @@ building_spec_motes_main_2 = {
 			has_modifier = slave_colony
 		}
 	}
-
 	can_build = no
-
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
@@ -126,13 +117,7 @@ building_spec_motes_main_2 = {
 		text = job_chemist_effect_desc
 	}
 	triggered_desc = {
-	category = manufacturing
-	destroy_trigger = {
-		OR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-		}
-	}
+		trigger = {
 			exists = owner
 			owner = { is_gestalt = yes }
 		}

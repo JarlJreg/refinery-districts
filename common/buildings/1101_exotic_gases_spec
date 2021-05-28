@@ -69,15 +69,24 @@ building_spec_gases_main_1 = {
 
 building_spec_gases_main_2 = {
 	base_buildtime = @b2_time
-
 	category = manufacturing
-
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
 	can_build = no
-
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		building_basic_income_check = yes
+	}
+	planet_modifier = {
+		modifier = {
+		planet_refiners_exotic_gases_produces_add=1
+		planet_refiners_minerals_upkeep_add=5
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -86,8 +95,6 @@ building_spec_gases_main_2 = {
 		}
 		modifier = {
 			job_gas_refiner_add = 2
-			planet_gas_refiner_exotic_gases_produces_add=1
-			planet_gas_refiner_minerals_upkeep_add=5
 		}
 	}
 	triggered_planet_modifier = {
@@ -97,8 +104,6 @@ building_spec_gases_main_2 = {
 		}
 		modifier = {
 			job_gas_refiner_drone_add = 2
-			planet_gas_refiner_drone_exotic_gases_produces_add=1
-			planet_gas_refiner_drone_minerals_upkeep_add=5
 		}
 	}
 	resources = {
@@ -118,13 +123,7 @@ building_spec_gases_main_2 = {
 		text = job_gas_refiner_effect_desc
 	}
 	triggered_desc = {
-	category = manufacturing
-	destroy_trigger = {
-		OR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-		}
-	}
+		trigger{
 			exists = owner
 			owner = { is_gestalt = yes }
 		}
@@ -135,15 +134,24 @@ building_spec_gases_main_2 = {
 
 building_spec_gases_main_3 = {
 	base_buildtime = @b3_time
-
 	category = manufacturing
-
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
 	can_build = no
-
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		building_basic_income_check = yes
+	}
+	planet_modifier = {
+		modifier = {
+		planet_refiners_exotic_gases_produces_add=2
+		planet_refiners_minerals_upkeep_add=10
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -152,8 +160,6 @@ building_spec_gases_main_3 = {
 		}
 		modifier = {
 			job_refiner_add = 3
-			planet_refiner_exotic_gases_produces_add = 2
-			planet_refiner_minerals_upkeep_add = 10
 		}
 	}
 	triggered_planet_modifier = {
@@ -163,8 +169,6 @@ building_spec_gases_main_3 = {
 		}
 		modifier = {
 			job_gas_refiner_drone_add = 3
-			planet_refiner_drone_exotic_gases_produces_add = 2
-			planet_refiner_drone_minerals_upkeep_add = 10
 		}
 	}
 	resources = {
@@ -180,13 +184,7 @@ building_spec_gases_main_3 = {
 		"tech_exotic_gases"
 	}
 	triggered_desc = {
-	category = manufacturing
-	destroy_trigger = {
-		OR = {
-			has_modifier = resort_colony
-			has_modifier = slave_colony
-		}
-	}
+		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
 		}

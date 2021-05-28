@@ -2,6 +2,11 @@
 building_spec_generic = {
 	base_buildtime = 0
 	category = manufacturing
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		building_basic_income_check = yes
+	}
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
