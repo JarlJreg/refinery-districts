@@ -181,12 +181,6 @@ building_spec_motes_main_3 = {
 			}
 		}
 	#Effects
-		planet_modifier = {
-			modifier = {
-				planet_chemists_volatile_motes_produces_add=2
-				planet_chemists_minerals_upkeep_add=10
-			}
-		}
 		triggered_planet_modifier = {
 			potential = {
 				exists = owner
@@ -194,6 +188,8 @@ building_spec_motes_main_3 = {
 			}
 			modifier = {
 				job_chemist_add = 3
+				planet_chemists_volatile_motes_produces_add=2
+				planet_chemists_minerals_upkeep_add=10
 			}
 		}
 		triggered_planet_modifier = {
@@ -203,6 +199,8 @@ building_spec_motes_main_3 = {
 			}
 			modifier = {
 				job_chemist_drone_add = 3
+				planet_chemists_volatile_motes_produces_add=2
+				planet_chemists_minerals_upkeep_add=10
 			}
 		}
 	#Descriptions

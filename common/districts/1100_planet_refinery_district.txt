@@ -23,7 +23,7 @@ district_refinery = {
 		district_arcology_refinery
 	}
 	resources = {
-		category = planet_districts_research
+		category = planet_districts_refinery
 		cost = {
 			minerals = @city_cost
 		}
@@ -49,7 +49,7 @@ district_refinery = {
 				}
 			}
 			modifier = {
-				job_refiner_add = 1
+				job_gas_refiner_add = 1
 			}
 		}
 		triggered_planet_modifier = {
@@ -63,7 +63,7 @@ district_refinery = {
 				}
 			}
 			modifier = {
-				job_refiner_add = 1
+				job_gas_refiner_add = 1
 			}
 		}
 		triggered_planet_modifier = {

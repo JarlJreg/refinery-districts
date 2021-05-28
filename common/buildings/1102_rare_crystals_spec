@@ -106,12 +106,6 @@ building_spec_crystals_main_2 = {
 			}
 		}
 	#Effects
-		planet_modifier = {
-			modifier = {
-			planet_translucers_rare_crystals_produces_add=1
-			planet_translucers_minerals_upkeep_add=5
-			}
-		}
 		triggered_planet_modifier = {
 			potential = {
 				exists = owner
@@ -119,6 +113,8 @@ building_spec_crystals_main_2 = {
 			}
 			modifier = {
 				job_translucer_add = 2
+				planet_translucers_rare_crystals_produces_add=1
+				planet_translucers_minerals_upkeep_add=5
 			}
 		}
 		triggered_planet_modifier = {
@@ -128,6 +124,8 @@ building_spec_crystals_main_2 = {
 			}
 			modifier = {
 				job_translucer_drone_add = 2
+				planet_translucers_rare_crystals_produces_add=1
+				planet_translucers_minerals_upkeep_add=5
 			}
 		}
 	#Descriptions
@@ -181,12 +179,6 @@ building_spec_crystals_main_3 = {
 			}
 		}
 	#Effects
-		planet_modifier = {
-			modifier = {
-				planet_translucers_rare_crystals_produces_add=2
-				planet_translucers_minerals_upkeep_add=10
-			}
-		}
 		triggered_planet_modifier = {
 			potential = {
 				exists = owner
@@ -194,6 +186,8 @@ building_spec_crystals_main_3 = {
 			}
 			modifier = {
 				job_translucer_add = 3
+				planet_translucers_rare_crystals_produces_add=2
+				planet_translucers_minerals_upkeep_add=10
 			}
 		}
 		triggered_planet_modifier = {
@@ -203,6 +197,8 @@ building_spec_crystals_main_3 = {
 			}
 			modifier = {
 				job_translucer_drone_add = 3
+				planet_translucers_rare_crystals_produces_add=2
+				planet_translucers_minerals_upkeep_add=10
 			}
 		}
 	#Descriptions
