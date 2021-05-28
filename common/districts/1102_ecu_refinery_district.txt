@@ -1,5 +1,5 @@
 @localvar_base_jobs = 5
-district_refinery = {
+ecu_district_refinery = {
 	#Basic_properties
 		base_buildtime =
 		is_capped_by_modifier = no
