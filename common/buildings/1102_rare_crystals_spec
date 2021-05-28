@@ -183,8 +183,8 @@ building_spec_crystals_main_3 = {
 	#Effects
 		planet_modifier = {
 			modifier = {
-			planet_translucers_rare_crystals_produces_add=2
-			planet_translucers_minerals_upkeep_add=10
+				planet_translucers_rare_crystals_produces_add=2
+				planet_translucers_minerals_upkeep_add=10
 			}
 		}
 		triggered_planet_modifier = {
