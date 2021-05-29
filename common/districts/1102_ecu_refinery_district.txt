@@ -1,7 +1,7 @@
 @localvar_base_jobs = 5
 ecu_district_refinery = {
 	# Basic_properties
-		base_buildtime =
+		base_buildtime = 600
 		is_capped_by_modifier = no
 		resources = {
 			category = ecu_districts_refinery

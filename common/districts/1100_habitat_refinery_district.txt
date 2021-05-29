@@ -20,7 +20,6 @@ habitat_district_refinery = {
 		allow = {
 			NOT = { has_modifier = resort_colony }
 			NOT = { has_modifier = slave_colony }
-			}
 		}
 		show_on_uncolonized = {
   		exists = from
