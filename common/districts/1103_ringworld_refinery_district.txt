@@ -1,5 +1,5 @@
 @localvar_base_jobs = 5
-ring_world_district_refinery = {
+district_rw_refinery = {
 	# Basic_properties
 		base_buildtime = 360
 		is_capped_by_modifier = no
@@ -26,7 +26,7 @@ ring_world_district_refinery = {
 		}
 		conversion_ratio = 0.5
 		convert_to = {
-			ecu_district_refinery
+			district_arcology_refinery
 		}
 	# Effects
 		# Base

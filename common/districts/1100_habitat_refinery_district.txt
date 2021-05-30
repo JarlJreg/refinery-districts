@@ -1,5 +1,5 @@
 @localvar_base_jobs = 1
-habitat_district_refinery = {
+district_hab_refinery = {
 	# Basic_properties
 		base_buildtime = 240
 		is_capped_by_modifier = no

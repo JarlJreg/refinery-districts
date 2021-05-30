@@ -1,5 +1,5 @@
 @localvar_base_jobs = 5
-ecu_district_refinery = {
+district_arcology_refinery = {
 	# Basic_properties
 		base_buildtime = 600
 		is_capped_by_modifier = no

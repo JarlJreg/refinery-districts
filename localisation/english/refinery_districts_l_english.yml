@@ -1,0 +1,20 @@
+﻿l_english:
+  #Districts
+    district_hab_refinery:0 = "Refinery District"
+    district_hab_refinery_plural:0 = "Refinery Districts"
+    district_hab_refinery_desc:0 = "Specialized equipment is made ready to refine strategic resources"
+    district_refinery:0 = "Refinery District"
+    district_refinery_plural:0 = "Refinery Districts"
+    district_refinery_desc:0 = "Specialized equipment is made ready to refine strategic resources"
+    district_arcology_refinery:0 = "Refinery Arcology"
+    district_arcology_refinery_plural:0 = "Refinery Arcologies"
+    district_arcology_refinery_desc:0 = "Specialized equipment is made ready to refine strategic resources"
+    district_rw_refinery:0 = "Refinery Segment"
+    district_rw_refinery_plural:0 = "Refinery Segments"
+    district_rw_refinery_desc:0 = "Specialized equipment is made ready to refine strategic resources"
+  #Buildings
+    building_spec_generic:0 = "Refinery Core Template"
+    building_spec_generic_plural:0 = "Refinery Core Templates"
+    building_spec_generic_desc:0 = "Refinery core Templates allow refinery districts to be mothballed and somewhat easier to build"
+  #Modifiers
+    mod_planet_refiners_exotic_gases_produces_add:0 = "???"
