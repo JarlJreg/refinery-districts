@@ -4,7 +4,7 @@ ring_world_district_refinery = {
 		base_buildtime = 360
 		is_capped_by_modifier = no
 		resources = {
-			category = ring_world_districts_refinery
+			category = planet_districts_refinery
 			cost = {
 				minerals = 1000
 			}
@@ -26,7 +26,7 @@ ring_world_district_refinery = {
 		}
 		conversion_ratio = 0.5
 		convert_to = {
-			district_arcology_refinery
+			ecu_district_refinery
 		}
 	# Effects
 		# Base
