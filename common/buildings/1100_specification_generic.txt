@@ -34,11 +34,6 @@ building_spec_generic = {
 				has_modifier = slave_colony
 			}
 		}
-	# Effects
-		planet_modifier = {
-			planet_districts_refinery_upkeep_mult = -0.5
-			planet_districts_refinery_cost_mult = -0.1
-		}
 	# Descriptions
 		triggered_desc = {
 			trigger = {

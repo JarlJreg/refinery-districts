@@ -16,7 +16,7 @@
   #Buildings
     building_spec_generic:0 "Refinery Core Template"
     building_spec_generic_plural:0 "Refinery Core Templates"
-    building_spec_generic_effect:0 "Refinery Core Templates are the basis for district based £Strategic_rescouces£strategic resource refinement, and allow refinery districts to be maintained easily and somewhat easier to build"
+    building_spec_generic_effect:0 "Refinery Core Templates are the basis for district based £Strategic_rescouces£strategic resource refinement"
     building_spec_generic_desc:0 "A foundation laid for future specialization, spanning across the waiting districts"
     building_spec_gases_main_1:0 "Exotic Gas Refinery Hubs"
     building_spec_gases_main_2:0 "Exotic Gas Refinery Network"
