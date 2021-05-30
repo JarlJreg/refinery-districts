@@ -36,31 +36,14 @@ building_spec_generic = {
 		}
 	# Effects
 		planet_modifier = {
-			modifier = {
-				planet_districts_refinery_upkeep_mult = -0.5
-				planet_districts_refinery_cost_mult = -0.1
-			}
+			planet_districts_refinery_upkeep_mult = -0.5
+			planet_districts_refinery_cost_mult = -0.1
 		}
 	# Descriptions
 		triggered_desc = {
 			trigger = {
-				exists = owner
-				owner = { is_gestalt = no }
+				always = yes
 			}
-			text = strat_generic_desc
-		}
-		triggered_desc = {
-			trigger = {
-				exists = owner
-				owner = { is_machine_empire = yes }
-			}
-			text = strat_generic_machine_desc
-		}
-		triggered_desc = {
-			trigger = {
-				exists = owner
-				owner = { is_hive_empire = yes }
-			}
-			text = strat_generic_hive_desc
+			text = building_spec_generic_effect
 		}
 }
