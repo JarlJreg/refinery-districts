@@ -1,5 +1,6 @@
 building_spec_gases_main_1 = {
 	# Basic_properties
+  icon = building_refinery
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b1_time
@@ -74,6 +75,7 @@ building_spec_gases_main_1 = {
 
 building_spec_gases_main_2 = {
 	# Basic_properties
+  icon = building_refinery
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b2_time
@@ -147,6 +149,7 @@ building_spec_gases_main_2 = {
 
 building_spec_gases_main_3 = {
 	# Basic_properties
+  icon = building_refinery
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b3_time
@@ -220,6 +223,7 @@ building_spec_gases_main_3 = {
 
 building_spec_gases_aux = {
 	# Basic_properties
+  icon = building_refinery
 		category = manufacturing
 		can_build = no
 		base_buildtime = @b1_time
